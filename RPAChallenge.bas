@@ -1,4 +1,4 @@
-Attribute VB_Name = "Módulo1"
+Attribute VB_Name = "RPAChallenge"
 Dim driver As New ChromeDriver
 
 Sub RPAChallenge()
@@ -11,7 +11,7 @@ Dim Qtd_Rows        As Long
 Set Sheet_Base = ThisWorkbook.Sheets("BASE")
 Let Qtd_Rows = WorksheetFunction.CountA(Sheet_Base.Columns(1))
 
-'Abrir o navegador e entrar na página
+'Open the browser
 
 With driver
     .Start
